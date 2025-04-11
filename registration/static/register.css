@@ -1,0 +1,71 @@
+body
+{
+    background-image: url('dark-nature-2560-x-1600-background-4eaiykviu8z4e8m1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-position: center;
+}
+h2
+{
+    text-align: center;
+    color:white;
+    font-size:35px ;
+}
+#box1
+{
+    border: 2px solid white;
+    width: 300px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    backdrop-filter: blur(10px);
+}
+#box2
+{
+    border: 2px solid white;
+    width: 300px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    backdrop-filter: blur(10px);
+}
+h1
+{
+    color:red;
+}
+#box3
+{
+    border: 2px solid white;
+    width: 300px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    backdrop-filter: blur(10px);
+}
+
+#a1
+{
+    font-size: 25px;
+}
+label
+{
+    color:white;
+    font-size:20px ;
+}
+p
+{
+    color:white;
+}

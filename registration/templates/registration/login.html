@@ -1,0 +1,35 @@
+<!-- templates/registration/login.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/register.css' %}">
+</head>
+<body>
+    <div class="container" id="box3" style="height: 300px;">
+        <h2>Login</h2>
+        {% if error %}
+            <div class="alert alert-danger">{{ error }}</div> <!-- Display error message -->
+        {% endif %}
+        <form method="POST">
+            {% csrf_token %} <!-- CSRF token for security -->
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" name="username" required>
+            </div>
+            <br>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="password" required>
+            </div>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="{% url 'register' %}">Register here</a></p> <!-- Link to registration -->
+    </div>
+</body>
+</html>

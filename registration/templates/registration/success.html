@@ -1,0 +1,19 @@
+<!-- templates/registration/success.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Successful</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/register.css' %}">
+</head>
+<body> 
+    <div id="box2" style="height: 200px">
+    <h1>Registration Successful!</h1>
+    <p>Thank you for registering. You can now log in.</p>
+    <a href="{% url 'login' %}">Log in</a>  <!-- Correctly reference the login URL -->
+    </div>
+</body>
+</html>

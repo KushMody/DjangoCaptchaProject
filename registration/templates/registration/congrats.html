@@ -1,0 +1,22 @@
+<!-- templates/registration/congrats.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/register.css' %}">
+</head>
+<body>
+    <div id="box2" style="height: 200px">
+        <div class="container">
+            <h2>Congratulations!</h2>
+            <p>You have successfully logged in.</p>
+            <p>Welcome back!</p>
+            <a href="{% url 'login' %}">Go to Login Page</a> <!-- Change to point to the login view -->
+        </div>
+    </div>
+</body>
+</html>
